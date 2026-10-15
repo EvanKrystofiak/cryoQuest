@@ -157,3 +157,23 @@ C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe /target:winexe /out:Cryo
 ```
 
 Press **F3** in the game to show the frame rate (for checking slow PCs).
+
+## License
+
+CRYO QUEST © 2026 Evan Krystofiak is licensed under
+[Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+The full license text is in [`LICENSE`](LICENSE).
+
+You are free to use, share and adapt this game (code, pixel art, music, text and logo) for
+**non-commercial** purposes such as classrooms, outreach events and museums, as long as you:
+
+* **give credit**, for example: *"CRYO QUEST by Evan Krystofiak, CC BY-NC-SA 4.0,
+  https://github.com/EvanKrystofiak/cryoQuest"*;
+* **share alike**: if you change it, share your version under the same license;
+* **don't use it commercially**: no selling it or using it mainly for commercial advantage.
+
+**Trademarks and third-party material are not covered by this license.** The Vanderbilt University
+name and logo (in the lab poster image) belong to Vanderbilt University. ZEISS, Crossbeam, Gemini,
+Leica, EM ICE, EM GP2, Thermo Scientific, Titan and Krios are trademarks of their respective owners.
+They are used here only to name the instruments the game teaches about, and their use does not imply
+endorsement.
