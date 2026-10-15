@@ -1,0 +1,111 @@
+﻿line_id,save_recording_as,what_pip_says,text_on_screen
+attract_1,voice/attract_1.mp3,Press the green A button to play!,PRESS THE GREEN A BUTTON TO PLAY!
+idle_1,voice/idle_1.mp3,Are you still there? Press A to keep playing!,ARE YOU STILL THERE? PRESS A TO KEEP PLAYING!
+pick_1,voice/pick_1.mp3,"Pick your scientist! Move left or right, then press A.",PICK YOUR SCIENTIST!
+intro_1,voice/intro_1.mp3,Hi! I'm Pip the penguin!,HI! I'M PIP THE PENGUIN!
+intro_2,voice/intro_2.mp3,"I want to see inside a tiny, tiny cell.","I WANT TO SEE INSIDE A TINY, TINY CELL."
+intro_3,voice/intro_3.mp3,Cells are too small to see with our eyes!,CELLS ARE TOO SMALL TO SEE WITH OUR EYES!
+intro_4,voice/intro_4.mp3,Let's make a 3 D picture of one. Follow me!,LET'S MAKE A 3D PICTURE OF ONE. FOLLOW ME!
+hub_go0,voice/hub_go0.mp3,Walk to the freezers. Look for the gold arrow!,WALK TO THE FREEZERS. LOOK FOR THE GOLD ARROW!
+hub_go1,voice/hub_go1.mp3,Next stop: the fib S E M! Follow the arrow.,NEXT STOP: THE FIB-SEM! FOLLOW THE ARROW.
+hub_go2,voice/hub_go2.mp3,Now the giant microscope: the Cry-oss!,NOW THE GIANT MICROSCOPE: THE KRIOS!
+hub_go3,voice/hub_go3.mp3,Last stop: the computer!,LAST STOP: THE COMPUTER!
+hub_hint,voice/hub_hint.mp3,Use the stick to walk. Press A at the gold arrow!,USE THE STICK TO WALK. PRESS A AT THE GOLD ARROW!
+hub_locked,voice/hub_locked.mp3,Not yet! Let's go in order. Follow the gold arrow.,NOT YET! LET'S GO IN ORDER. FOLLOW THE GOLD ARROW.
+hub_done,voice/hub_done.mp3,We did that one already. Follow the gold arrow!,WE DID THAT ONE ALREADY. FOLLOW THE GOLD ARROW!
+fr_1,voice/fr_1.mp3,This is the freezing station. Brrr!,THIS IS THE FREEZING STATION. BRRR!
+fr_pick,voice/fr_pick.mp3,What shall we look inside today? Pick a sample!,WHAT SHALL WE LOOK INSIDE TODAY? PICK A SAMPLE!
+name_bacteria,voice/name_bacteria.mp3,Bacteria!,BACTERIA!
+name_yeast,voice/name_yeast.mp3,Yeast!,YEAST!
+name_worm,voice/name_worm.mp3,A tiny worm!,A TINY WORM!
+fr_bac_1,voice/fr_bac_1.mp3,Bacteria are super tiny. Some live in your tummy and help you!,BACTERIA ARE SUPER TINY. SOME LIVE IN YOUR TUMMY AND HELP YOU!
+fr_bac_2,voice/fr_bac_2.mp3,A drop of bacteria is very thin.,A DROP OF BACTERIA IS VERY THIN.
+fr_yeast_1,voice/fr_yeast_1.mp3,Yeast is a tiny fungus. It helps make bread fluffy!,YEAST IS A TINY FUNGUS. IT HELPS MAKE BREAD FLUFFY!
+fr_yeast_2,voice/fr_yeast_2.mp3,A drop of yeast cells is thin.,A DROP OF YEAST CELLS IS THIN.
+fr_worm_1,voice/fr_worm_1.mp3,This little worm is smaller than a grain of rice!,THIS LITTLE WORM IS SMALLER THAN A GRAIN OF RICE!
+fr_worm_2,voice/fr_worm_2.mp3,But it is much thicker than a drop of cells.,BUT IT IS MUCH THICKER THAN A DROP OF CELLS.
+fr_2,voice/fr_2.mp3,Water in cells can turn into spiky ice crystals.,WATER IN CELLS CAN TURN INTO SPIKY ICE CRYSTALS.
+fr_4,voice/fr_4.mp3,So we freeze super fast. The water turns into smooth glass ice!,SO WE FREEZE SUPER FAST. THE WATER TURNS INTO SMOOTH GLASS ICE!
+fr_rule,voice/fr_rule.mp3,Thin things go in the plunge freezer. Thick things go in the high pressure freezer.,THIN THINGS: PLUNGE FREEZER. THICK THINGS: HIGH PRESSURE FREEZER.
+fr_ask,voice/fr_ask.mp3,Which machine should we use?,WHICH MACHINE SHOULD WE USE?
+fr_wrong_thin,voice/fr_wrong_thin.mp3,Hmm... That one is for thick things. Try the other one!,HMM... THAT ONE IS FOR THICK THINGS. TRY THE OTHER ONE!
+fr_wrong_thick,voice/fr_wrong_thick.mp3,Hmm... That one is for thin things. Try the other one!,HMM... THAT ONE IS FOR THIN THINGS. TRY THE OTHER ONE!
+fr_right,voice/fr_right.mp3,Yes! Great choice!,YES! GREAT CHOICE!
+pl_1,voice/pl_1.mp3,This is the Leica E M G P 2. It is a plunge freezer.,THIS IS THE LEICA EM GP2. IT IS A PLUNGE FREEZER.
+pl_grid,voice/pl_grid.mp3,The grid is a tiny metal net. It is smaller than your fingernail!,THE GRID IS A TINY METAL NET. IT IS SMALLER THAN YOUR FINGERNAIL!
+pl_drop,voice/pl_drop.mp3,Press A when the dropper is over the grid!,PRESS A WHEN THE DROPPER IS OVER THE GRID!
+pl_miss,voice/pl_miss.mp3,"Oops, missed! Try again.","OOPS, MISSED! TRY AGAIN."
+pl_hit,voice/pl_hit.mp3,Plop! Nice drop!,PLOP! NICE DROP!
+pl_blot,voice/pl_blot.mp3,Too much water! Hold A to soak it up. Let go in the green!,TOO MUCH WATER! HOLD A TO SOAK IT UP. LET GO IN THE GREEN!
+pl_blot_more,voice/pl_blot_more.mp3,A little more! Hold A again.,A LITTLE MORE! HOLD A AGAIN.
+pl_blot_good,voice/pl_blot_good.mp3,Perfect! A super thin layer of water.,PERFECT! A SUPER THIN LAYER OF WATER.
+pl_blot_dry,voice/pl_blot_dry.mp3,"A bit too dry, but okay!","A BIT TOO DRY, BUT OKAY!"
+pl_plunge,voice/pl_plunge.mp3,Now quick! Press A to plunge!,NOW QUICK! PRESS A TO PLUNGE!
+pl_cold,voice/pl_cold.mp3,Splash! Into liquid ethane. It is about minus 180 degrees!,SPLASH! INTO LIQUID ETHANE. IT IS ABOUT -180 °C!
+pl_pole,voice/pl_pole.mp3,That's even colder than my home at the south pole!,THAT'S EVEN COLDER THAN MY HOME AT THE SOUTH POLE!
+hp_1,voice/hp_1.mp3,This is the Leica E M Ice. It is a high pressure freezer.,THIS IS THE LEICA EM ICE. IT IS A HIGH PRESSURE FREEZER.
+hp_load,voice/hp_load.mp3,Press A to tuck the worm into its tiny metal sandwich!,PRESS A TO TUCK THE WORM INTO ITS TINY METAL SANDWICH!
+hp_pump,voice/hp_pump.mp3,Tap A again and again to pump up the pressure!,TAP A AGAIN AND AGAIN TO PUMP UP THE PRESSURE!
+hp_full,voice/hp_full.mp3,Full pressure! Freeze!,FULL PRESSURE! FREEZE!
+hp_fact,voice/hp_fact.mp3,That's twice as much squeeze as the bottom of the deepest ocean!,THAT'S TWICE AS MUCH SQUEEZE AS THE BOTTOM OF THE DEEPEST OCEAN!
+hp_why,voice/hp_why.mp3,Squeezing stops spiky ice. Then liquid nitrogen freezes it in a flash!,SQUEEZING STOPS SPIKY ICE. THEN LIQUID NITROGEN FREEZES IT IN A FLASH!
+ice_1,voice/ice_1.mp3,Let's zoom in on the water!,LET'S ZOOM IN ON THE WATER!
+ice_slow,voice/ice_slow.mp3,"Frozen slowly, water makes spiky crystals. Ouch!","FROZEN SLOWLY, WATER MAKES SPIKY CRYSTALS. OUCH!"
+ice_fast,voice/ice_fast.mp3,"Frozen super fast, it becomes smooth glass ice. The cell is safe!","FROZEN SUPER FAST, IT BECOMES SMOOTH GLASS ICE. THE CELL IS SAFE!"
+ice_word,voice/ice_word.mp3,Scientists call this vitrification! That means turning into glass.,SCIENTISTS CALL THIS VITRIFICATION!
+fr_done,voice/fr_done.mp3,Your sample is frozen! Now we keep it super cold.,YOUR SAMPLE IS FROZEN! NOW WE KEEP IT SUPER COLD.
+fr_next,voice/fr_next.mp3,Let's take it to the fib S E M!,LET'S TAKE IT TO THE FIB-SEM!
+fib_1,voice/fib_1.mp3,This is the Zeiss Crossbeam five fifty.,THIS IS THE ZEISS CROSSBEAM 550.
+fib_2,voice/fib_2.mp3,"It has two beams: one to look, and one to cut!","IT HAS TWO BEAMS: ONE TO LOOK, AND ONE TO CUT!"
+fib_why,voice/fib_why.mp3,Our sample is too thick to see through. We must cut a thin slice!,OUR SAMPLE IS TOO THICK TO SEE THROUGH. WE MUST CUT A THIN SLICE!
+fib_find,voice/fib_find.mp3,"Find a nice, whole cell. Move the target and press A!","FIND A NICE, WHOLE CELL. MOVE THE TARGET AND PRESS A!"
+fib_find_worm,voice/fib_find_worm.mp3,"Find a nice, whole worm. Move the target and press A!","FIND A NICE, WHOLE WORM. MOVE THE TARGET AND PRESS A!"
+fib_bad_bar,voice/fib_bad_bar.mp3,That one is on the metal bar. Try another!,THAT ONE IS ON THE METAL BAR. TRY ANOTHER!
+fib_bad_broken,voice/fib_bad_broken.mp3,That one is broken. Try another!,THAT ONE IS BROKEN. TRY ANOTHER!
+fib_bad_clump,voice/fib_bad_clump.mp3,Too many cells squished together. Try another!,TOO MANY CELLS SQUISHED TOGETHER. TRY ANOTHER!
+fib_bad_none,voice/fib_bad_none.mp3,There's nothing there. Look for a bump!,THERE'S NOTHING THERE. LOOK FOR A BUMP!
+fib_good,voice/fib_good.mp3,What a nice cell!,WHAT A NICE CELL!
+fib_good_worm,voice/fib_good_worm.mp3,What a nice worm!,WHAT A NICE WORM!
+fib_coat,voice/fib_coat.mp3,"First, a shiny metal coat to protect the top. Hold A to spray!","FIRST, A SHINY METAL COAT TO PROTECT THE TOP. HOLD A TO SPRAY!"
+fib_coat_done,voice/fib_coat_done.mp3,Shiny! Like a suit of armor.,SHINY! LIKE A SUIT OF ARMOR.
+fib_mill,voice/fib_mill.mp3,Now the ion beam! Hold A and dig away the orange parts.,NOW THE ION BEAM! HOLD A AND DIG AWAY THE ORANGE PARTS.
+fib_keep,voice/fib_keep.mp3,Keep the gold slice in the middle!,KEEP THE GOLD SLICE IN THE MIDDLE!
+fib_careful,voice/fib_careful.mp3,Careful! Don't dig the gold slice!,CAREFUL! DON'T DIG THE GOLD SLICE!
+fib_polish,voice/fib_polish.mp3,Great digging! Now polish it even thinner.,GREAT DIGGING! NOW POLISH IT EVEN THINNER.
+fib_done,voice/fib_done.mp3,We made a lamella! That means a super thin slice.,WE MADE A LAMELLA! THAT MEANS A SUPER THIN SLICE.
+fib_fact,voice/fib_fact.mp3,It's hundreds of times thinner than one hair!,IT'S HUNDREDS OF TIMES THINNER THAN ONE HAIR!
+fib_next,voice/fib_next.mp3,Now to the giant microscope: the Cry-oss!,NOW TO THE GIANT MICROSCOPE: THE KRIOS!
+kr_1,voice/kr_1.mp3,This is the Titan Cry-oss G 4. It is huge!,THIS IS THE TITAN KRIOS G4. IT IS HUGE!
+kr_2,voice/kr_2.mp3,It shoots tiny electrons through our slice to take pictures.,IT SHOOTS TINY ELECTRONS THROUGH OUR SLICE TO TAKE PICTURES.
+kr_3,voice/kr_3.mp3,"Inside there is no air at all, and it stays super cold!","INSIDE THERE IS NO AIR AT ALL, AND IT STAYS SUPER COLD!"
+kr_load,voice/kr_load.mp3,Press A to load our grid into the robot loader!,PRESS A TO LOAD OUR GRID INTO THE ROBOT LOADER!
+kr_find,voice/kr_find.mp3,Where is our slice? Find the glowing lamella and press A!,WHERE IS OUR SLICE? FIND THE GLOWING LAMELLA AND PRESS A!
+kr_found,voice/kr_found.mp3,There it is! Zoom in!,THERE IT IS! ZOOM IN!
+kr_notit,voice/kr_notit.mp3,That's not it. Look for the glowing slice!,THAT'S NOT IT. LOOK FOR THE GLOWING SLICE!
+kr_tilt1,voice/kr_tilt1.mp3,Now we tilt the slice and take pictures from many sides.,NOW WE TILT THE SLICE AND TAKE PICTURES FROM MANY SIDES.
+kr_tilt2,voice/kr_tilt2.mp3,Like walking around a statue to see all of it!,LIKE WALKING AROUND A STATUE TO SEE ALL OF IT!
+kr_tilt3,voice/kr_tilt3.mp3,Move the gold circle onto the glowing part. Press A to snap!,MOVE THE GOLD CIRCLE ONTO THE GLOWING PART. PRESS A TO SNAP!
+kr_miss,voice/kr_miss.mp3,"Oops! Center it first, then snap.","OOPS! CENTER IT FIRST, THEN SNAP."
+kr_gentle,voice/kr_gentle.mp3,Electrons are strong. Quick pictures keep the cell safe.,ELECTRONS ARE STRONG. QUICK PICTURES KEEP THE CELL SAFE.
+kr_done,voice/kr_done.mp3,We took 13 pictures! Scientists call this a tilt series.,WE TOOK 13 PICTURES! SCIENTISTS CALL THIS A TILT SERIES.
+kr_next,voice/kr_next.mp3,Let's build the 3 D picture on the computer!,LET'S BUILD THE 3D PICTURE ON THE COMPUTER!
+tm_1,voice/tm_1.mp3,The computer puts all the pictures together...,THE COMPUTER PUTS ALL THE PICTURES TOGETHER...
+tm_2,voice/tm_2.mp3,Ta da! A 3 D tomogram!,TA-DA! A 3D TOMOGRAM!
+tm_3,voice/tm_3.mp3,"Now we can dive through the cell, slice by slice.","NOW WE CAN DIVE THROUGH THE CELL, SLICE BY SLICE."
+tm_4,voice/tm_4.mp3,Push up and down to dive. Press A when something glows!,PUSH UP AND DOWN TO DIVE. PRESS A WHEN SOMETHING GLOWS!
+tm_membrane,voice/tm_membrane.mp3,The membrane! It's the cell's skin.,THE MEMBRANE! IT'S THE CELL'S SKIN.
+tm_membrane_bac,voice/tm_membrane_bac.mp3,"Membranes! This kind of bacteria has two skins, one inside the other!","MEMBRANES! THIS KIND OF BACTERIA HAS TWO SKINS, ONE INSIDE THE OTHER!"
+tm_ribosome,voice/tm_ribosome.mp3,Ribosomes! Tiny factories that make proteins.,RIBOSOMES! TINY FACTORIES THAT MAKE PROTEINS.
+tm_mito,voice/tm_mito.mp3,A mito-condree-on! The cell's power plant.,A MITOCHONDRION! THE CELL'S POWER PLANT.
+tm_nucleus,voice/tm_nucleus.mp3,The new-clee-us! It keeps the cell's D N A safe.,THE NUCLEUS! IT KEEPS THE CELL'S DNA SAFE.
+tm_dna,voice/tm_dna.mp3,The D N A! It's the cell's instruction book. Bacteria have no new-clee-us.,THE DNA! IT'S THE CELL'S INSTRUCTION BOOK. BACTERIA HAVE NO NUCLEUS.
+tm_flagellum,voice/tm_flagellum.mp3,A fla-jell-um! A tail that spins like a propeller!,A FLAGELLUM! A TAIL THAT SPINS LIKE A PROPELLER!
+tm_muscle,voice/tm_muscle.mp3,Muscle fibers! They pull so the worm can wiggle!,MUSCLE FIBERS! THEY PULL SO THE WORM CAN WIGGLE!
+tm_all,voice/tm_all.mp3,You found them all!,YOU FOUND THEM ALL!
+tm_real,voice/tm_real.mp3,And this is a real tomogram from our lab!,AND THIS IS A REAL TOMOGRAM FROM OUR LAB!
+real_1,voice/real_1.mp3,Look! This is a real picture from our lab!,LOOK! THIS IS A REAL PICTURE FROM OUR LAB!
+stars_3,voice/stars_3.mp3,Amazing! Three stars!,AMAZING! THREE STARS!
+stars_2,voice/stars_2.mp3,Great job! Two stars!,GREAT JOB! TWO STARS!
+stars_1,voice/stars_1.mp3,Good job! You got a star!,GOOD JOB! YOU GOT A STAR!
+cert_1,voice/cert_1.mp3,You did it! You are a cryo E T scientist!,YOU DID IT! YOU ARE A CRYO-ET SCIENTIST!
+cert_2,voice/cert_2.mp3,Thanks for playing. Come back soon!,THANKS FOR PLAYING. COME BACK SOON!

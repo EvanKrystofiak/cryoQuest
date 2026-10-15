@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CRYO QUEST</title>
+<style>
+  html, body {
+    margin: 0; padding: 0; height: 100%;
+    background: #000; overflow: hidden;
+    user-select: none; -webkit-user-select: none;
+    touch-action: none;
+  }
+  #screen {
+    position: absolute; left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+    background: #000;
+  }
+  body.hide-cursor, body.hide-cursor #screen { cursor: none; }
+</style>
+</head>
+<body>
+<canvas id="screen" width="384" height="216"></canvas>
+
+<!-- Your settings and real images (edit this file to add your own pictures) -->
+<script src="assets/config.js"></script>
+
+<!-- Game engine -->
+<script src="js/engine.js"></script>
+<script src="js/input.js"></script>
+<script src="js/gfx.js"></script>
+<script src="js/audio.js"></script>
+<script src="js/voice.js"></script>
+<script src="js/lines.js"></script>
+<script src="js/dialog.js"></script>
+<script src="js/sprites.js"></script>
+<script src="js/realcard.js"></script>
+<script src="js/common.js"></script>
+<script src="js/cellmodel.js"></script>
+
+<!-- Scenes -->
+<script src="js/scene_title.js"></script>
+<script src="js/scene_pick.js"></script>
+<script src="js/scene_hub.js"></script>
+<script src="js/scene_freeze.js"></script>
+<script src="js/scene_fib.js"></script>
+<script src="js/scene_krios.js"></script>
+<script src="js/scene_tomo.js"></script>
+<script src="js/scene_cert.js"></script>
+<script src="js/admin.js"></script>
+
+<script>CQ.start('title');</script>
+</body>
+</html>

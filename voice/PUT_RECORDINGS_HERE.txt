@@ -1,0 +1,3 @@
+Put recorded voice lines here as MP3 files named <line_id>.mp3 (for example intro_1.mp3).
+See VOICE_SCRIPT.csv in the main folder for every line and its id.
+Lines without a recording are spoken by the computer voice.

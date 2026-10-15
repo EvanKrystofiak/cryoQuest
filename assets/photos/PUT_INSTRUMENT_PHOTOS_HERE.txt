@@ -1,0 +1,1 @@
+Photos of your instruments and lab (reference for the pixel art). The game does not load these.

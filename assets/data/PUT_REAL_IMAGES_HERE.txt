@@ -1,0 +1,2 @@
+Put real images (PNG/JPG) or a tomogram movie (MP4) from your lab here,
+then type the file names into assets\config.js.

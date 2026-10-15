@@ -1,0 +1,9 @@
+# Windows clutter
+Thumbs.db
+desktop.ini
+
+# build/distribution copies
+*.zip
+
+# Third-party reference photo (Zeiss product image) - kept locally only, not needed by the game
+assets/photos/zeiss_crossbeam_550.jpg
