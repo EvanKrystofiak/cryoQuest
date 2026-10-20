@@ -12,8 +12,9 @@
     const S = CQ.settings;
     const voices = CQ.voice.voices();
     return [
+      { label: 'LANGUAGE', value: CQ.i18n.names[CQ.i18n.lang], change: (d) => CQ.i18n.next(d) },
       { label: 'PIP VOICE', value: S.voice ? 'ON' : 'OFF', change: () => { S.voice = !S.voice; if (!S.voice) CQ.voice.stop(); } },
-      { label: 'VOICE', value: CQ.voice.voiceName().replace(/^Microsoft\s+/i, '').replace(/\s*-\s*English.*$/i, '').replace(/\s*\(.*$/, '').slice(0, 24), change: (d) => {
+      { label: 'VOICE', value: voices.length ? CQ.voice.voiceName().replace(/^Microsoft\s+/i, '').replace(/\s*-\s*(English|Spanish).*$/i, '').replace(/\s*\(.*$/, '').slice(0, 24) : CQ.voice.available() ? 'DEFAULT' : 'NONE INSTALLED (TEXT ONLY)', change: (d) => {
         if (!voices.length) return;
         let i = voices.indexOf(CQ.voice.voiceName());
         i = (i + (d || 1) + voices.length) % voices.length;
@@ -78,8 +79,8 @@
       items().forEach((it, i) => {
         const y = 48 + i * 13;
         if (i === sel) G.rect(c, 26, y - 2, CQ.W - 52, 11, '#2a2410');
-        G.text(c, (i === sel ? '> ' : '  ') + it.label, 30, y, { color: i === sel ? 'goldL' : 'white' });
-        G.text(c, it.value, CQ.W - 30, y, { color: i === sel ? 'gold' : 'g2', align: 'right' });
+        G.text(c, (i === sel ? '> ' : '  ') + it.label, 30, y, { color: i === sel ? 'goldL' : 'white', raw: true });
+        G.text(c, it.value, CQ.W - 30, y, { color: i === sel ? 'gold' : 'g2', align: 'right', raw: true });
       });
       G.text(c, msgT > 0 ? msg : 'UP/DOWN PICK  LEFT/RIGHT CHANGE  A SELECT  B CLOSE', CQ.W / 2, CQ.H - 20, { color: msgT > 0 ? 'green' : 'g3', align: 'center' });
     },

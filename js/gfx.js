@@ -59,19 +59,30 @@
     '_': '.....|.....|.....|.....|.....|.....|#####', '~': '.....|.....|.#..#|#.##.|.....|.....|.....',
     '&': '.##..|#..#.|#.#..|.#...|#.#.#|#..#.|.##.#',
     'µ': '.....|#...#|#...#|#...#|##.##|#.#.#|#....',
+    // Spanish: accents sit in three extra rows above the letter
+    'Á': '...#.|..#..|.....|.###.|#...#|#...#|#####|#...#|#...#|#...#',
+    'É': '...#.|..#..|.....|#####|#....|#....|####.|#....|#....|#####',
+    'Í': '..#|.#.|...|###|.#.|.#.|.#.|.#.|.#.|###',
+    'Ó': '...#.|..#..|.....|.###.|#...#|#...#|#...#|#...#|#...#|.###.',
+    'Ú': '...#.|..#..|.....|#...#|#...#|#...#|#...#|#...#|#...#|.###.',
+    'Ñ': '.##.#|#.##.|.....|#...#|##..#|#.#.#|#..##|#...#|#...#|#...#',
+    'Ü': '.#.#.|.....|.....|#...#|#...#|#...#|#...#|#...#|#...#|.###.',
+    '¡': '#|.|#|#|#|#|#', '¿': '..#..|.....|..#..|.#...|#....|#...#|.###.',
+    '©': '.#####.|#.....#|#.###.#|#.#...#|#.###.#|#.....#|.#####.',
   };
   const font = { h: 7, glyphs: {}, atlas: null, tints: {} };
   (function buildFont() {
     let x = 0;
     const list = Object.keys(GLYPHS);
-    const atlas = CQ.makeCanvas(list.length * 6, 7);
+    const atlas = CQ.makeCanvas(list.length * 8, 10);
     const a = atlas.getContext('2d');
     a.fillStyle = '#fff';
     for (const ch of list) {
       const rows = GLYPHS[ch].split('|');
       const w = rows[0].length;
+      const top = 10 - rows.length;
       for (let r = 0; r < rows.length; r++)
-        for (let c = 0; c < w; c++) if (rows[r][c] === '#') a.fillRect(x + c, r, 1, 1);
+        for (let c = 0; c < w; c++) if (rows[r][c] === '#') a.fillRect(x + c, top + r, 1, 1);
       font.glyphs[ch] = { x, w };
       x += w + 1;
     }
@@ -95,19 +106,28 @@
     return font.glyphs[ch] || font.glyphs[ch.toUpperCase()] || font.glyphs['?'];
   }
 
-  function measure(str, scale) {
+  // UI text is written in English in the code; in Spanish mode it is swapped for its translation here
+  function prep(str, raw) {
+    str = String(str).toUpperCase();
+    return CQ.i18n && !raw ? CQ.i18n.ui(str) : str;
+  }
+
+  function measureRaw(str, scale) {
     scale = scale || 1;
     let w = 0;
     for (const ch of String(str)) w += glyph(ch).w + 1;
     return Math.max(0, w - 1) * scale;
   }
+  function measure(str, scale, raw) { return measureRaw(prep(str, raw), scale); }
 
-  function rawText(c, str, x, y, color, scale) {
+  // bodyOnly: skip the accent rows (used for drop shadows, which would smear the accents)
+  function rawText(c, str, x, y, color, scale, bodyOnly) {
     const atlas = tinted(color);
     let cx = x;
     for (const ch of String(str)) {
       const g = glyph(ch);
-      c.drawImage(atlas, g.x, 0, g.w, 7, cx, y, g.w * scale, 7 * scale);
+      if (bodyOnly) c.drawImage(atlas, g.x, 3, g.w, 7, cx, y, g.w * scale, 7 * scale);
+      else c.drawImage(atlas, g.x, 0, g.w, 10, cx, y - 3 * scale, g.w * scale, 10 * scale);
       cx += (g.w + 1) * scale;
     }
   }
@@ -116,8 +136,8 @@
   function text(c, str, x, y, o) {
     o = o || {};
     const s = o.scale || 1;
-    str = String(str).toUpperCase();
-    const w = measure(str, s);
+    str = prep(str, o.raw);
+    const w = measureRaw(str, s);
     if (o.align === 'center') x -= Math.floor(w / 2);
     else if (o.align === 'right') x -= w;
     x = Math.round(x); y = Math.round(y);
@@ -127,7 +147,7 @@
       for (let dy = -1; dy <= 1; dy++)
         for (let dx = -1; dx <= 1; dx++) if (dx || dy) rawText(c, str, x + dx * ow, y + dy * ow, oc, s);
     }
-    if (o.shadow) rawText(c, str, x + s, y + s, o.shadow === true ? 'ink' : o.shadow, s);
+    if (o.shadow) rawText(c, str, x + s, y + s, o.shadow === true ? 'ink' : o.shadow, s, true);
     rawText(c, str, x, y, o.color || 'white', s);
     return w;
   }
@@ -139,7 +159,7 @@
     let line = '';
     for (const w of words) {
       const t = line ? line + ' ' + w : w;
-      if (measure(t, scale) > maxW && line) { lines.push(line); line = w; } else line = t;
+      if (measureRaw(t, scale) > maxW && line) { lines.push(line); line = w; } else line = t;
     }
     if (line) lines.push(line);
     return lines;

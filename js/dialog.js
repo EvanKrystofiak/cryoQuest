@@ -22,7 +22,7 @@
 
   function resolve(item) {
     if (typeof item === 'string') {
-      const l = CQ.LINES[item];
+      const l = CQ.i18n.line(item);
       return l ? { id: item, t: l.t, say: l.say } : { id: null, t: item };
     }
     return item;
@@ -92,7 +92,7 @@
       else { CQ.voice.stop(); advance(); return; }
     }
     if (done) {
-      const voiceOff = !CQ.settings.voice || CQ.voice.blocked;
+      const voiceOff = !CQ.settings.voice || CQ.voice.blocked || !CQ.voice.available();
       if (d.voiceDone || voiceOff) {
         d.wait += dt;
         const need = voiceOff ? 1.6 + d.total * 0.05 : 1.4;
@@ -117,12 +117,12 @@
     if (d.toastT <= 0) { d.toastLine = null; return; }
     const g = G();
     const n = d.toastLines.length;
-    const w = Math.max.apply(null, d.toastLines.map((s) => g.measure(s))) + 34;
+    const w = Math.max.apply(null, d.toastLines.map((s) => g.measure(s, 1, true))) + 34;
     const h = 12 + n * 10;
     const x = Math.round(CQ.W / 2 - w / 2), y = 14;
     g.panel(c, x, y, w, h);
     c.drawImage(CQ.sprites.pipMini(), x + 6, y + Math.round(h / 2) - 7);
-    d.toastLines.forEach((s, i) => g.text(c, s, x + 26, y + 6 + i * 10, { color: 'white' }));
+    d.toastLines.forEach((s, i) => g.text(c, s, x + 26, y + 6 + i * 10, { color: 'white', raw: true }));
   }
 
   d.draw = function (c) {
@@ -154,7 +154,7 @@
     for (let i = 0; i < n && left > 0; i++) {
       const s = d.lines[i].slice(0, left);
       left -= d.lines[i].length + 1;
-      g.text(c, s, tx, ty + i * 11, { color: 'white', shadow: '#000' });
+      g.text(c, s, tx, ty + i * 11, { color: 'white', shadow: '#000', raw: true });
     }
     if (d.shown >= d.total && Math.floor(CQ.time * 2) % 2 === 0) {
       // little gold "next" arrow

@@ -35,11 +35,14 @@
       for (const [x, y] of [[14, 14], [CQ.W - 22, 14], [14, CQ.H - 22], [CQ.W - 22, CQ.H - 22]]) { G.rect(c, x, y, 8, 8, 'gold'); G.rect(c, x + 2, y + 2, 4, 4, 'goldDD'); }
 
       c.drawImage(CQ.sprites.logo, 26, 26);
-      G.text(c, 'CERTIFICATE', 218, 30, { color: 'goldL', align: 'center' });
-      G.text(c, 'CRYO-ET', 218, 44, { color: 'gold', scale: 3, align: 'center', shadow: 'goldDD' });
-      G.text(c, 'SCIENTIST', 218, 70, { color: 'gold', scale: 3, align: 'center', shadow: 'goldDD' });
+      const es = CQ.i18n.lang === 'es';
+      // Spanish: a little more room above the big words for the accent on CIENTÍFICO
+      G.text(c, 'CERTIFICATE', 218, es ? 26 : 30, { color: 'goldL', align: 'center' });
+      G.text(c, es ? 'CIENTÍFICO/A' : 'CRYO-ET', 218, es ? 46 : 44, { color: 'gold', scale: 3, align: 'center', shadow: 'goldDD' });
+      G.text(c, es ? 'DE CRIO-ET' : 'SCIENTIST', 218, es ? 71 : 70, { color: 'gold', scale: 3, align: 'center', shadow: 'goldDD' });
       const cfg = window.CQ_CONFIG || {};
-      G.text(c, 'EXPLORER #' + CQ.game.explorerNo + ' AT ' + (cfg.labName || 'OUR LAB'), 218, 98, { color: 'white', align: 'center' });
+      const lab = (es && cfg.labNameSpanish) || cfg.labName || 'OUR LAB';
+      G.text(c, 'EXPLORER #' + CQ.game.explorerNo + ' AT ' + lab, 218, 98, { color: 'white', align: 'center' });
 
       // you + Pip
       const look = CQ.game.look;

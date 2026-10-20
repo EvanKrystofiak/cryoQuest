@@ -73,7 +73,8 @@
       R.key = key;
       R.t = 0;
       R.onDone = onDone;
-      R.caption = e.caption || (cfg[key] && cfg[key].caption) || 'THE REAL THING!';
+      const es = CQ.i18n.lang === 'es';
+      R.caption = (es && (e.caption_es || (cfg[key] && cfg[key].caption_es))) || e.caption || (cfg[key] && cfg[key].caption) || 'THE REAL THING!';
       R.slice = 0;
       R.dir = 1;
       slices = [];

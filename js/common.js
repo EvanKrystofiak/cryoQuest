@@ -147,10 +147,12 @@
     const g = CQ.gfx;
     const pulse = Math.floor(CQ.time * 4) % 2;
     const tw = g.measure(label, 2), iw = g.promptWidth();
-    const w = tw + iw + 20, h = 22;
+    // accented capitals (Spanish) need room above the letters
+    const acc = /[ÁÉÍÓÚÑÜ]/.test(CQ.i18n.ui(String(label).toUpperCase()));
+    const w = tw + iw + 20, h = acc ? 26 : 22, ty = acc ? 9 : 5;
     const x = Math.round(cx - w / 2), y = Math.round(cy - h / 2);
     g.panel(c, x, y - pulse, w, h);
-    g.prompt(c, x + 7, y + 5 - pulse, { blink: false });
-    g.text(c, label, x + 7 + iw + 6, y + 5 - pulse, { color: pulse ? 'goldL' : 'gold', scale: 2 });
+    g.prompt(c, x + 7, y + ty + (acc ? 1 : 0) - pulse, { blink: false });
+    g.text(c, label, x + 7 + iw + 6, y + ty - pulse, { color: pulse ? 'goldL' : 'gold', scale: 2 });
   };
 })();

@@ -6,6 +6,15 @@ window.CQ_CONFIG = {
 
   // Name printed on the certificate at the end ("A CRYO-ET SCIENTIST AT ...")
   labName: 'OUR CRYO-EM LAB',
+  // The same name in Spanish (leave '' to use labName)
+  labNameSpanish: '',
+
+  // Language the game starts in: 'en' = English, 'es' = Español.
+  // Players can switch on the title screen (left/right or click); their choice is remembered.
+  language: 'en',
+
+  // Shown in the bottom right corner of the title screen ('' to hide)
+  copyright: '© 2026 EVAN KRYSTOFIAK',
 
   // Pip's voice. true = talk, false = silent (text only)
   voice: true,
@@ -16,6 +25,9 @@ window.CQ_CONFIG = {
 
   // Leave empty to pick automatically, or put part of a voice name, e.g. 'Zira' or 'Aria'
   voiceName: '',
+  // Spanish voice, e.g. 'Dalia', 'Paloma' or 'Sabina'. Spanish recordings go in voice/es/<LINE_ID>.mp3
+  // (see VOICE_SCRIPT_ES.csv). If the computer has no Spanish voice, Pip's Spanish lines are text only.
+  voiceNameSpanish: '',
 
   musicVolume: 0.5,   // 0.0 - 1.0
   sfxVolume: 0.8,     // 0.0 - 1.0
@@ -31,6 +43,8 @@ window.CQ_CONFIG = {
   //  Put image files (PNG or JPG) in the assets/data folder and type the
   //  file names below. Leave '' (empty) to skip that card.
   //  They are shown after each stage as "THE REAL THING!"
+  //  The built-in captions are translated automatically. For your own captions
+  //  you can add a Spanish one too, e.g.  caption_es: '¡UNA LAMELA DE VERDAD!'
   // -------------------------------------------------------------------
   real: {
     // after stage 1 (freezing): e.g. a photo of your plunger, or a grid atlas

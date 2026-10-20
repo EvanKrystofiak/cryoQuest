@@ -1,0 +1,140 @@
+// CRYO QUEST - every line Pip says, in Spanish (same ids as lines.js).
+//   t   = text shown on screen (keep it short: players are 5-7 years old)
+//   say = optional different wording for the speaking voice (pronunciation help)
+// To record real Spanish voice-over later, save each line as voice/es/<ID>.mp3 (for example voice/es/intro_1.mp3).
+(function () {
+  'use strict';
+  window.CQ.LINES_ES = {
+    // --- title / kiosk ---
+    attract_1: { t: '¡PRESIONA EL BOTÓN VERDE A PARA JUGAR!' },
+    idle_1: { t: '¿SIGUES AHÍ? ¡PRESIONA A PARA SEGUIR JUGANDO!' },
+    pick_1: { t: '¡ELIGE TU PERSONAJE!', say: '¡Elige tu personaje! Muévete a la izquierda o a la derecha, y presiona A.' },
+
+    // --- intro ---
+    intro_1: { t: '¡HOLA! ¡SOY PIP, EL PINGÜINO!' },
+    intro_2: { t: 'QUIERO VER DENTRO DE UNA CÉLULA CHIQUITITA.' },
+    intro_3: { t: '¡LAS CÉLULAS SON DEMASIADO PEQUEÑAS PARA VERLAS CON LOS OJOS!' },
+    intro_4: { t: '¡HAGAMOS UNA FOTO EN 3D DE UNA! ¡SÍGUEME!', say: '¡Hagamos una foto en tres D de una! ¡Sígueme!' },
+
+    // --- lab hub ---
+    hub_go0: { t: 'CAMINA HASTA LOS CONGELADORES. ¡BUSCA LA FLECHA DORADA!' },
+    hub_go1: { t: 'PRÓXIMA PARADA: ¡EL FIB-SEM! SIGUE LA FLECHA.', say: 'Próxima parada: ¡el fib sem! Sigue la flecha.' },
+    hub_go2: { t: 'AHORA, EL MICROSCOPIO GIGANTE: ¡EL KRIOS!', say: 'Ahora, el microscopio gigante: ¡el Crios!' },
+    hub_go3: { t: 'ÚLTIMA PARADA: ¡LA COMPUTADORA!' },
+    hub_hint: { t: 'USA LA PALANCA PARA CAMINAR. ¡PRESIONA A EN LA FLECHA DORADA!' },
+    hub_locked: { t: '¡TODAVÍA NO! VAMOS EN ORDEN. SIGUE LA FLECHA DORADA.' },
+    hub_done: { t: 'ESA YA LA HICIMOS. ¡SIGUE LA FLECHA DORADA!' },
+
+    // --- stage 1: freezing ---
+    fr_1: { t: 'ESTA ES LA ESTACIÓN DE CONGELACIÓN. ¡BRRR!' },
+    fr_pick: { t: '¿QUÉ VAMOS A MIRAR POR DENTRO HOY? ¡ELIGE UNA MUESTRA!' },
+    name_bacteria: { t: '¡BACTERIAS!' },
+    name_yeast: { t: '¡LEVADURA!' },
+    name_worm: { t: '¡UN GUSANITO!' },
+    fr_bac_1: { t: 'LAS BACTERIAS SON SÚPER CHIQUITAS. ¡ALGUNAS VIVEN EN TU PANCITA Y TE AYUDAN!' },
+    fr_bac_2: { t: 'UNA GOTA DE BACTERIAS ES MUY DELGADA.' },
+    fr_yeast_1: { t: 'LA LEVADURA ES UN HONGO CHIQUITO. ¡AYUDA A QUE EL PAN SEA ESPONJOSO!' },
+    fr_yeast_2: { t: 'UNA GOTA DE LEVADURA ES DELGADA.' },
+    fr_worm_1: { t: '¡ESTE GUSANITO ES MÁS PEQUEÑO QUE UN GRANO DE ARROZ!' },
+    fr_worm_2: { t: 'PERO ES MUCHO MÁS GRUESO QUE UNA GOTA DE CÉLULAS.' },
+    fr_2: { t: 'EL AGUA DE LAS CÉLULAS PUEDE VOLVERSE CRISTALES DE HIELO CON PICOS.' },
+    fr_4: { t: 'POR ESO CONGELAMOS SÚPER RÁPIDO. ¡EL AGUA SE VUELVE HIELO LISO COMO EL VIDRIO!' },
+    fr_rule: { t: 'COSAS DELGADAS: CONGELADOR DE INMERSIÓN. COSAS GRUESAS: CONGELADOR DE ALTA PRESIÓN.',
+      say: 'Las cosas delgadas van al congelador de inmersión. Las cosas gruesas van al congelador de alta presión.' },
+    fr_ask: { t: '¿QUÉ MÁQUINA DEBEMOS USAR?' },
+    fr_wrong_thin: { t: 'MMM... ESA ES PARA COSAS GRUESAS. ¡PRUEBA LA OTRA!' },
+    fr_wrong_thick: { t: 'MMM... ESA ES PARA COSAS DELGADAS. ¡PRUEBA LA OTRA!' },
+    fr_right: { t: '¡SÍ! ¡MUY BUENA ELECCIÓN!' },
+
+    pl_1: { t: 'ESTA ES LA LEICA EM GP2. ES UN CONGELADOR DE INMERSIÓN.', say: 'Esta es la Leica E M G P 2. Es un congelador de inmersión.' },
+    pl_grid: { t: 'LA REJILLA ES UNA RED DE METAL CHIQUITA. ¡ES MÁS PEQUEÑA QUE TU UÑA!' },
+    pl_drop: { t: '¡PRESIONA A CUANDO EL GOTERO ESTÉ SOBRE LA REJILLA!' },
+    pl_miss: { t: '¡UY, FALLASTE! INTÉNTALO OTRA VEZ.' },
+    pl_hit: { t: '¡PLOP! ¡QUÉ BUENA GOTA!' },
+    pl_blot: { t: '¡DEMASIADA AGUA! MANTÉN A PARA SECARLA. ¡SUELTA EN LO VERDE!' },
+    pl_blot_more: { t: '¡UN POQUITO MÁS! MANTÉN A OTRA VEZ.' },
+    pl_blot_good: { t: '¡PERFECTO! UNA CAPA DE AGUA SÚPER DELGADA.' },
+    pl_blot_dry: { t: 'QUEDÓ UN POCO SECA, ¡PERO ESTÁ BIEN!' },
+    pl_plunge: { t: '¡AHORA, RÁPIDO! ¡PRESIONA A PARA SUMERGIR!' },
+    pl_cold: { t: '¡SPLASH! AL ETANO LÍQUIDO. ¡ESTÁ A UNOS -180 °C!',
+      say: '¡Splash! Al etano líquido. ¡Está a unos menos ciento ochenta grados!' },
+    pl_pole: { t: '¡ES AÚN MÁS FRÍO QUE MI CASA EN EL POLO SUR!' },
+
+    hp_1: { t: 'ESTA ES LA LEICA EM ICE. ES UN CONGELADOR DE ALTA PRESIÓN.', say: 'Esta es la Leica E M Ais. Es un congelador de alta presión.' },
+    hp_load: { t: '¡PRESIONA A PARA METER EL GUSANO EN SU SÁNDWICH DE METAL CHIQUITO!' },
+    hp_pump: { t: '¡PRESIONA A MUCHAS VECES PARA SUBIR LA PRESIÓN!' },
+    hp_full: { t: '¡PRESIÓN COMPLETA! ¡A CONGELAR!' },
+    hp_fact: { t: '¡ES EL DOBLE DE APRETÓN QUE EN EL FONDO DEL OCÉANO MÁS PROFUNDO!' },
+    hp_why: { t: 'APRETAR EVITA EL HIELO CON PICOS. ¡LUEGO EL NITRÓGENO LÍQUIDO LO CONGELA EN UN INSTANTE!' },
+
+    ice_1: { t: '¡VEAMOS EL AGUA DE CERCA!' },
+    ice_slow: { t: 'SI SE CONGELA LENTO, EL AGUA HACE CRISTALES CON PICOS. ¡AY!' },
+    ice_fast: { t: 'SI SE CONGELA SÚPER RÁPIDO, SE VUELVE HIELO LISO COMO EL VIDRIO. ¡LA CÉLULA ESTÁ A SALVO!' },
+    ice_word: { t: '¡LOS CIENTÍFICOS LLAMAN A ESTO VITRIFICACIÓN!', say: '¡Los científicos llaman a esto vitrificación! Quiere decir volverse vidrio.' },
+    fr_done: { t: '¡TU MUESTRA ESTÁ CONGELADA! AHORA LA MANTENEMOS SÚPER FRÍA.' },
+    fr_next: { t: '¡LLEVÉMOSLA AL FIB-SEM!', say: '¡Llevémosla al fib sem!' },
+
+    // --- stage 2: cryo-FIB-SEM ---
+    fib_1: { t: 'ESTE ES EL ZEISS CROSSBEAM 550.', say: 'Este es el Zeiss Cros bim quinientos cincuenta.' },
+    fib_2: { t: '¡TIENE DOS HACES: UNO PARA MIRAR Y OTRO PARA CORTAR!' },
+    fib_why: { t: 'NUESTRA MUESTRA ES DEMASIADO GRUESA PARA VER A TRAVÉS. ¡HAY QUE CORTAR UNA REBANADA FINA!' },
+    fib_find: { t: 'BUSCA UNA CÉLULA BONITA Y ENTERA. ¡MUEVE LA MIRA Y PRESIONA A!' },
+    fib_find_worm: { t: 'BUSCA UN GUSANO BONITO Y ENTERO. ¡MUEVE LA MIRA Y PRESIONA A!' },
+    fib_bad_bar: { t: 'ESA ESTÁ SOBRE LA BARRA DE METAL. ¡PRUEBA OTRA!' },
+    fib_bad_broken: { t: 'ESA ESTÁ ROTA. ¡PRUEBA OTRA!' },
+    fib_bad_clump: { t: 'HAY DEMASIADAS CÉLULAS APLASTADAS JUNTAS. ¡PRUEBA OTRA!' },
+    fib_bad_none: { t: 'AHÍ NO HAY NADA. ¡BUSCA UN BULTITO!' },
+    fib_good: { t: '¡QUÉ CÉLULA TAN BONITA!' },
+    fib_good_worm: { t: '¡QUÉ GUSANO TAN BONITO!' },
+    fib_coat: { t: 'PRIMERO, UNA CAPA DE METAL BRILLANTE PARA PROTEGER LA PARTE DE ARRIBA. ¡MANTÉN A PARA ROCIAR!' },
+    fib_coat_done: { t: '¡BRILLANTE! COMO UNA ARMADURA.' },
+    fib_mill: { t: '¡AHORA EL HAZ DE IONES! MANTÉN A Y EXCAVA LAS PARTES NARANJAS.' },
+    fib_keep: { t: '¡DEJA LA REBANADA DORADA EN EL MEDIO!' },
+    fib_careful: { t: '¡CUIDADO! ¡NO EXCAVES LA REBANADA DORADA!' },
+    fib_polish: { t: '¡EXCELENTE! AHORA PULE PARA QUE QUEDE AÚN MÁS FINA.' },
+    fib_done: { t: '¡HICIMOS UNA LAMELA! ESO QUIERE DECIR UNA REBANADA SÚPER FINA.' },
+    fib_fact: { t: '¡ES CIENTOS DE VECES MÁS FINA QUE UN PELO!' },
+    fib_next: { t: 'AHORA, AL MICROSCOPIO GIGANTE: ¡EL KRIOS!', say: 'Ahora, al microscopio gigante: ¡el Crios!' },
+
+    // --- stage 3: Titan Krios G4 ---
+    kr_1: { t: 'ESTE ES EL TITAN KRIOS G4. ¡ES ENORME!', say: 'Este es el Titán Crios G 4. ¡Es enorme!' },
+    kr_2: { t: 'DISPARA ELECTRONES CHIQUITOS A TRAVÉS DE NUESTRA REBANADA PARA TOMAR FOTOS.' },
+    kr_3: { t: '¡ADENTRO NO HAY NADA DE AIRE, Y SE MANTIENE SÚPER FRÍO!' },
+    kr_load: { t: '¡PRESIONA A PARA METER NUESTRA REJILLA EN EL CARGADOR ROBOT!' },
+    kr_find: { t: '¿DÓNDE ESTÁ NUESTRA REBANADA? ¡BUSCA LA LAMELA QUE BRILLA Y PRESIONA A!' },
+    kr_found: { t: '¡AHÍ ESTÁ! ¡ACERQUÉMONOS!' },
+    kr_notit: { t: 'ESA NO ES. ¡BUSCA LA REBANADA QUE BRILLA!' },
+    kr_tilt1: { t: 'AHORA GIRAMOS LA REBANADA Y TOMAMOS FOTOS DESDE MUCHOS LADOS.' },
+    kr_tilt2: { t: '¡COMO CAMINAR ALREDEDOR DE UNA ESTATUA PARA VERLA TODA!' },
+    kr_tilt3: { t: 'MUEVE EL CÍRCULO DORADO SOBRE LA PARTE QUE BRILLA. ¡PRESIONA A PARA LA FOTO!' },
+    kr_miss: { t: '¡UY! PRIMERO CENTRA, LUEGO TOMA LA FOTO.' },
+    kr_gentle: { t: 'LOS ELECTRONES SON FUERTES. LAS FOTOS RÁPIDAS CUIDAN LA CÉLULA.' },
+    kr_done: { t: '¡TOMAMOS 13 FOTOS! LOS CIENTÍFICOS LO LLAMAN SERIE DE INCLINACIÓN.' },
+    kr_next: { t: '¡ARMEMOS LA FOTO EN 3D EN LA COMPUTADORA!', say: '¡Armemos la foto en tres D en la computadora!' },
+
+    // --- stage 4: tomogram ---
+    tm_1: { t: 'LA COMPUTADORA JUNTA TODAS LAS FOTOS...' },
+    tm_2: { t: '¡TARÁN! ¡UN TOMOGRAMA EN 3D!', say: '¡Tarán! ¡Un tomograma en tres D!' },
+    tm_3: { t: 'AHORA PODEMOS BUCEAR POR LA CÉLULA, REBANADA POR REBANADA.' },
+    tm_4: { t: 'MUEVE ARRIBA Y ABAJO PARA BUCEAR. ¡PRESIONA A CUANDO ALGO BRILLE!' },
+    tm_membrane: { t: '¡LA MEMBRANA! ES LA PIEL DE LA CÉLULA.' },
+    tm_membrane_bac: { t: '¡MEMBRANAS! ¡ESTA BACTERIA TIENE DOS PIELES, UNA DENTRO DE LA OTRA!' },
+    tm_ribosome: { t: '¡RIBOSOMAS! FÁBRICAS CHIQUITAS QUE HACEN PROTEÍNAS.' },
+    tm_mito: { t: '¡UNA MITOCONDRIA! LA PLANTA DE ENERGÍA DE LA CÉLULA.' },
+    tm_nucleus: { t: '¡EL NÚCLEO! GUARDA EL ADN DE LA CÉLULA.', say: '¡El núcleo! Guarda el A D N de la célula.' },
+    tm_dna: { t: '¡EL ADN! ES EL LIBRO DE INSTRUCCIONES DE LA CÉLULA. LAS BACTERIAS NO TIENEN NÚCLEO.',
+      say: '¡El A D N! Es el libro de instrucciones de la célula. Las bacterias no tienen núcleo.' },
+    tm_flagellum: { t: '¡UN FLAGELO! ¡UNA COLITA QUE GIRA COMO UNA HÉLICE!' },
+    tm_muscle: { t: '¡FIBRAS MUSCULARES! ¡JALAN PARA QUE EL GUSANO SE PUEDA MENEAR!' },
+    tm_all: { t: '¡LOS ENCONTRASTE TODOS!' },
+    tm_real: { t: '¡Y ESTE ES UN TOMOGRAMA DE VERDAD DE NUESTRO LABORATORIO!' },
+
+    // --- rewards / ending ---
+    real_1: { t: '¡MIRA! ¡ESTA ES UNA FOTO DE VERDAD DE NUESTRO LABORATORIO!' },
+    stars_3: { t: '¡INCREÍBLE! ¡TRES ESTRELLAS!' },
+    stars_2: { t: '¡MUY BIEN! ¡DOS ESTRELLAS!' },
+    stars_1: { t: '¡BIEN HECHO! ¡GANASTE UNA ESTRELLA!' },
+    cert_1: { t: '¡LO LOGRASTE! ¡YA ERES PARTE DEL EQUIPO DE CRIO-ET!', say: '¡Lo lograste! ¡Ya eres parte del equipo de crio E T!' },
+    cert_2: { t: 'GRACIAS POR JUGAR. ¡VUELVE PRONTO!' },
+  };
+})();

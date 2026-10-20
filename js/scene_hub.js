@@ -44,10 +44,11 @@
 
   const posterReady = () => { const p = CQ.sprites.labPoster; return !!(p && p.complete && p.naturalWidth > 0); };
 
-  let bg = null, bgHasPoster = false;
+  let bg = null, bgHasPoster = false, bgLang = null;
   function bakeBackground() {
     const S = CQ.sprites;
     bgHasPoster = posterReady();
+    bgLang = CQ.i18n.lang;
     return g().bake(CQ.W, CQ.H, (c) => {
       const G = g();
       // wall
@@ -151,7 +152,7 @@
   CQ.scenes.hub = {
     state: () => pl, // for testing
     enter(params) {
-      if (!bg || (!bgHasPoster && posterReady())) bg = bakeBackground();
+      if (!bg || (!bgHasPoster && posterReady()) || bgLang !== CQ.i18n.lang) bg = bakeBackground();
       if (!PROPS) PROPS = props();
       busy = false;
       auto = null; autoStation = null;
@@ -194,7 +195,8 @@
         }
         if (clickedStation >= 0) {
           if (nearStation() === clickedStation) { useStation(clickedStation); return; }
-          auto = planPath(clickedStation); autoStation = clickedStation;
+          // clicking the same station again while walking there keeps the current path (no backtracking)
+          if (!(auto && autoStation === clickedStation)) { auto = planPath(clickedStation); autoStation = clickedStation; }
         } else if (P.y > WALL_Y) {
           auto = [[P.x, P.y]]; autoStation = null;
         }

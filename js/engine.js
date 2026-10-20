@@ -66,6 +66,8 @@
     idleTimeout: cfg.idleTimeoutSeconds || 60,
     recordedVoice: cfg.useRecordedVoice !== undefined ? cfg.useRecordedVoice : true,
     voiceName: cfg.voiceName || '',
+    voiceNameEs: cfg.voiceNameSpanish || '',
+    lang: cfg.language === 'es' ? 'es' : 'en',
   };
   // Staff-menu changes are remembered, but editing config.js wins (saved values are dropped when it changes).
   const cfgStamp = JSON.stringify(defaults);

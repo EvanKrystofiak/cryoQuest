@@ -35,7 +35,8 @@
     // inside the column
     G.panel(c, 164, 14, 208, 136);
     const cx = 268;
-    G.rect(c, cx - 22, 24, 44, 14, 'goldD'); G.rect(c, cx - 21, 25, 42, 12, 'gold');
+    const tall = CQ.i18n.lang === 'es' ? 2 : 0; // room for the accents in CAÑÓN
+    G.rect(c, cx - 22, 24 - tall, 44, 14 + tall, 'goldD'); G.rect(c, cx - 21, 25 - tall, 42, 12 + tall, 'gold');
     G.text(c, 'GUN', cx, 28, { color: 'ink', align: 'center' });
     for (const ly of [52, 72, 112]) { G.rect(c, cx - 30, ly, 20, 8, 'g3'); G.rect(c, cx + 10, ly, 20, 8, 'g3'); G.rect(c, cx - 30, ly, 20, 2, 'g2'); G.rect(c, cx + 10, ly, 20, 2, 'g2'); }
     // sample

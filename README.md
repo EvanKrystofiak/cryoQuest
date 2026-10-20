@@ -24,6 +24,8 @@ When a kid moves between the samples, Pip says each name out loud for children w
 
 One play-through takes about 6–9 minutes. There is no way to fail; kids earn 1–3 stars per stage and get a certificate at the end.
 
+The game can be played in **English or Spanish (Español)**. Kids or staff pick the language on the title screen.
+
 ---
 
 ## How to start
@@ -50,14 +52,31 @@ profile, so it does not touch anyone's normal browser.
 Connect or pair the controller **before** starting the game. Press A once on the title screen so the
 browser notices it.
 
+## Languages (English / Español)
+
+* On the **title screen**, press **left/right** (stick, D-pad or arrow keys) or **click** `ENGLISH` / `ESPAÑOL`
+  in the bottom left corner. Pip says a line in the new language so kids who can't read yet hear the change.
+  The choice is remembered for the next player. It can also be changed in the staff menu (F2 → LANGUAGE).
+* Everything switches: Pip's lines, all labels and signs, the certificate, and the built-in picture captions.
+  The Spanish text uses simple Latin American Spanish for 5–7 year olds.
+* To make Spanish the default when the game starts, set `language: 'es'` in `assets\config.js`.
+* **Spanish voice:** with internet, Edge has natural Spanish voices and the game picks a Mexican Spanish one
+  (Dalia) automatically. **Offline**, Windows needs a Spanish voice installed: Settings → Time & language →
+  Speech → *Add voices* → **Español (México)**. If no Spanish voice is installed, Pip's Spanish lines are
+  shown as text only, and they stay on screen long enough to be read aloud by a grown-up.
+* For your own picture captions you can add a Spanish one next to the English one, e.g.
+  `caption: 'A REAL LAMELLA!', caption_es: '¡UNA LAMELA DE VERDAD!'`. The built-in captions are translated
+  automatically. `labNameSpanish` sets the lab name on the Spanish certificate.
+* The copyright line in the bottom right corner of the title screen comes from `copyright` in `assets\config.js`.
+
 ## Kiosk tips
 
 * **Idle reset:** after 60 seconds with no input, "STILL THERE?" appears, and the game returns to the title after 10 more seconds.
 * **Attract mode:** the title screen shows a short "how it works" slideshow when nobody is playing.
 * **Explorer counter:** the title screen shows how many kids played today, which is handy for outreach reports.
 * **Staff menu:** press **F2**, or **hold View + Menu on the controller for 3 seconds**. From there you can:
-  turn the voice on/off, choose a voice, set music/sound volume, change the idle time, reset the explorer
-  count, or restart the game.
+  switch the language, turn the voice on/off, choose a voice, set music/sound volume, change the idle time,
+  reset the explorer count, or restart the game.
 * Set Windows to never sleep or turn off the screen (Settings → System → Power).
 * To start automatically when the PC logs in: press Win+R, type `shell:startup`, and put a shortcut
   to `CryoQuest.exe` in that folder.
@@ -103,8 +122,11 @@ To use **real recorded voice-over**:
    (for example `voice\intro_1.mp3`).
 3. Restart the game. Recorded lines are used automatically, and the computer voice fills in any line that has no recording.
 
-To change what Pip says, edit `js\lines.js` (keep lines short for young readers), then update the CSV
-to match.
+**Spanish recordings** work the same way: `VOICE_SCRIPT_ES.csv` lists every Spanish line; save them in
+`voice\es\` (for example `voice\es\intro_1.mp3`).
+
+To change what Pip says, edit `js\lines.js` (English) or `js\lines_es.js` (Spanish). Keep lines short
+for young readers, then update the CSV to match. On-screen labels in Spanish are in `js\i18n.js`.
 
 ## Logo
 
@@ -142,8 +164,9 @@ Play CRYO QUEST (backup).bat  backup launcher
 index.html                    the game
 assets\config.js              settings + your real pictures
 assets\data\                  put real images / movies here
-voice\                        put recorded voice lines here (optional)
+voice\                        put recorded voice lines here (optional; Spanish in voice\es\)
 VOICE_SCRIPT.csv              every line Pip says, for recording
+VOICE_SCRIPT_ES.csv           the same in Spanish
 js\                           game code (plain JavaScript, no build step)
 logo\                         logo files
 launcher\                     launcher source code and icon

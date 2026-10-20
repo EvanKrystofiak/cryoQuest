@@ -592,7 +592,8 @@
       g.rect(c, 0, 0, 26, 14, 'ink');
       g.rect(c, 1, 1, 24, 12, 'gold');
       for (let i = -12; i < 26; i += 6) g.line(c, i + 1, 12, i + 8, 1, 'goldD');
-      g.rect(c, 3, 4, 20, 7, 'ink');
+      // taller plate in Spanish so the accent on FRÍO shows
+      if (CQ.i18n.lang === 'es') g.rect(c, 2, 1, 22, 11, 'ink'); else g.rect(c, 3, 4, 20, 7, 'ink');
       g.text(c, 'COLD', 13, 4, { color: 'gold', align: 'center' });
     });
   }
@@ -614,9 +615,16 @@
       g.circle(c, 12, 14, 3, 'purple'); g.circle(c, 12, 14, 2, 'purpleD');
       g.ellipse(c, 19, 18, 3, 2, 'orange');
       g.px(c, 18, 11, 'ink'); g.px(c, 21, 12, 'ink'); g.px(c, 9, 19, 'ink'); g.px(c, 16, 21, 'ink');
-      g.text(c, 'CELL', 15, 26, { color: 'ink', align: 'center' });
+      if (CQ.i18n.lang !== 'es') g.text(c, 'CELL', 15, 26, { color: 'ink', align: 'center' }); // CÉLULA is too wide
     });
   }
+
+  // sprites with words on them: baked again when the language changes
+  S.relabel = function () {
+    S.coldSign = bakeColdSign();
+    S.cellPoster = bakeCellPoster();
+    S.labelLang = CQ.i18n.lang;
+  };
 
   // ---------------- logo (gold & black) ----------------
   function hexInside(x, y, R) { const ax = Math.abs(x), ay = Math.abs(y); return ax <= 0.866 * R && ay + ax / 1.732 <= R; }
@@ -703,9 +711,8 @@
     S.plant = bakePlant();
     S.window = bakeWindow();
     S.door = bakeDoor();
-    S.coldSign = bakeColdSign();
+    S.relabel();
     S.clock = bakeClock();
-    S.cellPoster = bakeCellPoster();
     S.logo = bakeLogo(1);
     S.logo2 = bakeLogo(2);
     S.grid = bakeGrid;

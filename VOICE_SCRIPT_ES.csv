@@ -1,0 +1,111 @@
+﻿line_id,save_recording_as,what_pip_says,text_on_screen
+attract_1,voice/es/attract_1.mp3,¡Presiona el botón verde A para jugar!,¡PRESIONA EL BOTÓN VERDE A PARA JUGAR!
+idle_1,voice/es/idle_1.mp3,¿Sigues ahí? ¡Presiona A para seguir jugando!,¿SIGUES AHÍ? ¡PRESIONA A PARA SEGUIR JUGANDO!
+pick_1,voice/es/pick_1.mp3,"¡Elige tu personaje! Muévete a la izquierda o a la derecha, y presiona A.",¡ELIGE TU PERSONAJE!
+intro_1,voice/es/intro_1.mp3,"¡Hola! ¡Soy Pip, el pingüino!","¡HOLA! ¡SOY PIP, EL PINGÜINO!"
+intro_2,voice/es/intro_2.mp3,Quiero ver dentro de una célula chiquitita.,QUIERO VER DENTRO DE UNA CÉLULA CHIQUITITA.
+intro_3,voice/es/intro_3.mp3,¡Las células son demasiado pequeñas para verlas con los ojos!,¡LAS CÉLULAS SON DEMASIADO PEQUEÑAS PARA VERLAS CON LOS OJOS!
+intro_4,voice/es/intro_4.mp3,¡Hagamos una foto en tres D de una! ¡Sígueme!,¡HAGAMOS UNA FOTO EN 3D DE UNA! ¡SÍGUEME!
+hub_go0,voice/es/hub_go0.mp3,Camina hasta los congeladores. ¡Busca la flecha dorada!,CAMINA HASTA LOS CONGELADORES. ¡BUSCA LA FLECHA DORADA!
+hub_go1,voice/es/hub_go1.mp3,Próxima parada: ¡el fib sem! Sigue la flecha.,PRÓXIMA PARADA: ¡EL FIB-SEM! SIGUE LA FLECHA.
+hub_go2,voice/es/hub_go2.mp3,"Ahora, el microscopio gigante: ¡el Crios!","AHORA, EL MICROSCOPIO GIGANTE: ¡EL KRIOS!"
+hub_go3,voice/es/hub_go3.mp3,Última parada: ¡la computadora!,ÚLTIMA PARADA: ¡LA COMPUTADORA!
+hub_hint,voice/es/hub_hint.mp3,Usa la palanca para caminar. ¡Presiona A en la flecha dorada!,USA LA PALANCA PARA CAMINAR. ¡PRESIONA A EN LA FLECHA DORADA!
+hub_locked,voice/es/hub_locked.mp3,¡Todavía no! Vamos en orden. Sigue la flecha dorada.,¡TODAVÍA NO! VAMOS EN ORDEN. SIGUE LA FLECHA DORADA.
+hub_done,voice/es/hub_done.mp3,Esa ya la hicimos. ¡Sigue la flecha dorada!,ESA YA LA HICIMOS. ¡SIGUE LA FLECHA DORADA!
+fr_1,voice/es/fr_1.mp3,Esta es la estación de congelación. ¡Brrr!,ESTA ES LA ESTACIÓN DE CONGELACIÓN. ¡BRRR!
+fr_pick,voice/es/fr_pick.mp3,¿Qué vamos a mirar por dentro hoy? ¡Elige una muestra!,¿QUÉ VAMOS A MIRAR POR DENTRO HOY? ¡ELIGE UNA MUESTRA!
+name_bacteria,voice/es/name_bacteria.mp3,¡Bacterias!,¡BACTERIAS!
+name_yeast,voice/es/name_yeast.mp3,¡Levadura!,¡LEVADURA!
+name_worm,voice/es/name_worm.mp3,¡Un gusanito!,¡UN GUSANITO!
+fr_bac_1,voice/es/fr_bac_1.mp3,Las bacterias son súper chiquitas. ¡Algunas viven en tu pancita y te ayudan!,LAS BACTERIAS SON SÚPER CHIQUITAS. ¡ALGUNAS VIVEN EN TU PANCITA Y TE AYUDAN!
+fr_bac_2,voice/es/fr_bac_2.mp3,Una gota de bacterias es muy delgada.,UNA GOTA DE BACTERIAS ES MUY DELGADA.
+fr_yeast_1,voice/es/fr_yeast_1.mp3,La levadura es un hongo chiquito. ¡Ayuda a que el pan sea esponjoso!,LA LEVADURA ES UN HONGO CHIQUITO. ¡AYUDA A QUE EL PAN SEA ESPONJOSO!
+fr_yeast_2,voice/es/fr_yeast_2.mp3,Una gota de levadura es delgada.,UNA GOTA DE LEVADURA ES DELGADA.
+fr_worm_1,voice/es/fr_worm_1.mp3,¡Este gusanito es más pequeño que un grano de arroz!,¡ESTE GUSANITO ES MÁS PEQUEÑO QUE UN GRANO DE ARROZ!
+fr_worm_2,voice/es/fr_worm_2.mp3,Pero es mucho más grueso que una gota de células.,PERO ES MUCHO MÁS GRUESO QUE UNA GOTA DE CÉLULAS.
+fr_2,voice/es/fr_2.mp3,El agua de las células puede volverse cristales de hielo con picos.,EL AGUA DE LAS CÉLULAS PUEDE VOLVERSE CRISTALES DE HIELO CON PICOS.
+fr_4,voice/es/fr_4.mp3,Por eso congelamos súper rápido. ¡El agua se vuelve hielo liso como el vidrio!,POR ESO CONGELAMOS SÚPER RÁPIDO. ¡EL AGUA SE VUELVE HIELO LISO COMO EL VIDRIO!
+fr_rule,voice/es/fr_rule.mp3,Las cosas delgadas van al congelador de inmersión. Las cosas gruesas van al congelador de alta presión.,COSAS DELGADAS: CONGELADOR DE INMERSIÓN. COSAS GRUESAS: CONGELADOR DE ALTA PRESIÓN.
+fr_ask,voice/es/fr_ask.mp3,¿Qué máquina debemos usar?,¿QUÉ MÁQUINA DEBEMOS USAR?
+fr_wrong_thin,voice/es/fr_wrong_thin.mp3,Mmm... Esa es para cosas gruesas. ¡Prueba la otra!,MMM... ESA ES PARA COSAS GRUESAS. ¡PRUEBA LA OTRA!
+fr_wrong_thick,voice/es/fr_wrong_thick.mp3,Mmm... Esa es para cosas delgadas. ¡Prueba la otra!,MMM... ESA ES PARA COSAS DELGADAS. ¡PRUEBA LA OTRA!
+fr_right,voice/es/fr_right.mp3,¡Sí! ¡Muy buena elección!,¡SÍ! ¡MUY BUENA ELECCIÓN!
+pl_1,voice/es/pl_1.mp3,Esta es la Leica E M G P 2. Es un congelador de inmersión.,ESTA ES LA LEICA EM GP2. ES UN CONGELADOR DE INMERSIÓN.
+pl_grid,voice/es/pl_grid.mp3,La rejilla es una red de metal chiquita. ¡Es más pequeña que tu uña!,LA REJILLA ES UNA RED DE METAL CHIQUITA. ¡ES MÁS PEQUEÑA QUE TU UÑA!
+pl_drop,voice/es/pl_drop.mp3,¡Presiona A cuando el gotero esté sobre la rejilla!,¡PRESIONA A CUANDO EL GOTERO ESTÉ SOBRE LA REJILLA!
+pl_miss,voice/es/pl_miss.mp3,"¡Uy, fallaste! Inténtalo otra vez.","¡UY, FALLASTE! INTÉNTALO OTRA VEZ."
+pl_hit,voice/es/pl_hit.mp3,¡Plop! ¡Qué buena gota!,¡PLOP! ¡QUÉ BUENA GOTA!
+pl_blot,voice/es/pl_blot.mp3,¡Demasiada agua! Mantén A para secarla. ¡Suelta en lo verde!,¡DEMASIADA AGUA! MANTÉN A PARA SECARLA. ¡SUELTA EN LO VERDE!
+pl_blot_more,voice/es/pl_blot_more.mp3,¡Un poquito más! Mantén A otra vez.,¡UN POQUITO MÁS! MANTÉN A OTRA VEZ.
+pl_blot_good,voice/es/pl_blot_good.mp3,¡Perfecto! Una capa de agua súper delgada.,¡PERFECTO! UNA CAPA DE AGUA SÚPER DELGADA.
+pl_blot_dry,voice/es/pl_blot_dry.mp3,"Quedó un poco seca, ¡pero está bien!","QUEDÓ UN POCO SECA, ¡PERO ESTÁ BIEN!"
+pl_plunge,voice/es/pl_plunge.mp3,"¡Ahora, rápido! ¡Presiona A para sumergir!","¡AHORA, RÁPIDO! ¡PRESIONA A PARA SUMERGIR!"
+pl_cold,voice/es/pl_cold.mp3,¡Splash! Al etano líquido. ¡Está a unos menos ciento ochenta grados!,¡SPLASH! AL ETANO LÍQUIDO. ¡ESTÁ A UNOS -180 °C!
+pl_pole,voice/es/pl_pole.mp3,¡Es aún más frío que mi casa en el Polo Sur!,¡ES AÚN MÁS FRÍO QUE MI CASA EN EL POLO SUR!
+hp_1,voice/es/hp_1.mp3,Esta es la Leica E M Ais. Es un congelador de alta presión.,ESTA ES LA LEICA EM ICE. ES UN CONGELADOR DE ALTA PRESIÓN.
+hp_load,voice/es/hp_load.mp3,¡Presiona A para meter el gusano en su sándwich de metal chiquito!,¡PRESIONA A PARA METER EL GUSANO EN SU SÁNDWICH DE METAL CHIQUITO!
+hp_pump,voice/es/hp_pump.mp3,¡Presiona A muchas veces para subir la presión!,¡PRESIONA A MUCHAS VECES PARA SUBIR LA PRESIÓN!
+hp_full,voice/es/hp_full.mp3,¡Presión completa! ¡A congelar!,¡PRESIÓN COMPLETA! ¡A CONGELAR!
+hp_fact,voice/es/hp_fact.mp3,¡Es el doble de apretón que en el fondo del océano más profundo!,¡ES EL DOBLE DE APRETÓN QUE EN EL FONDO DEL OCÉANO MÁS PROFUNDO!
+hp_why,voice/es/hp_why.mp3,Apretar evita el hielo con picos. ¡Luego el nitrógeno líquido lo congela en un instante!,APRETAR EVITA EL HIELO CON PICOS. ¡LUEGO EL NITRÓGENO LÍQUIDO LO CONGELA EN UN INSTANTE!
+ice_1,voice/es/ice_1.mp3,¡Veamos el agua de cerca!,¡VEAMOS EL AGUA DE CERCA!
+ice_slow,voice/es/ice_slow.mp3,"Si se congela lento, el agua hace cristales con picos. ¡Ay!","SI SE CONGELA LENTO, EL AGUA HACE CRISTALES CON PICOS. ¡AY!"
+ice_fast,voice/es/ice_fast.mp3,"Si se congela súper rápido, se vuelve hielo liso como el vidrio. ¡La célula está a salvo!","SI SE CONGELA SÚPER RÁPIDO, SE VUELVE HIELO LISO COMO EL VIDRIO. ¡LA CÉLULA ESTÁ A SALVO!"
+ice_word,voice/es/ice_word.mp3,¡Los científicos llaman a esto vitrificación! Quiere decir volverse vidrio.,¡LOS CIENTÍFICOS LLAMAN A ESTO VITRIFICACIÓN!
+fr_done,voice/es/fr_done.mp3,¡Tu muestra está congelada! Ahora la mantenemos súper fría.,¡TU MUESTRA ESTÁ CONGELADA! AHORA LA MANTENEMOS SÚPER FRÍA.
+fr_next,voice/es/fr_next.mp3,¡Llevémosla al fib sem!,¡LLEVÉMOSLA AL FIB-SEM!
+fib_1,voice/es/fib_1.mp3,Este es el Zeiss Cros bim quinientos cincuenta.,ESTE ES EL ZEISS CROSSBEAM 550.
+fib_2,voice/es/fib_2.mp3,¡Tiene dos haces: uno para mirar y otro para cortar!,¡TIENE DOS HACES: UNO PARA MIRAR Y OTRO PARA CORTAR!
+fib_why,voice/es/fib_why.mp3,Nuestra muestra es demasiado gruesa para ver a través. ¡Hay que cortar una rebanada fina!,NUESTRA MUESTRA ES DEMASIADO GRUESA PARA VER A TRAVÉS. ¡HAY QUE CORTAR UNA REBANADA FINA!
+fib_find,voice/es/fib_find.mp3,Busca una célula bonita y entera. ¡Mueve la mira y presiona A!,BUSCA UNA CÉLULA BONITA Y ENTERA. ¡MUEVE LA MIRA Y PRESIONA A!
+fib_find_worm,voice/es/fib_find_worm.mp3,Busca un gusano bonito y entero. ¡Mueve la mira y presiona A!,BUSCA UN GUSANO BONITO Y ENTERO. ¡MUEVE LA MIRA Y PRESIONA A!
+fib_bad_bar,voice/es/fib_bad_bar.mp3,Esa está sobre la barra de metal. ¡Prueba otra!,ESA ESTÁ SOBRE LA BARRA DE METAL. ¡PRUEBA OTRA!
+fib_bad_broken,voice/es/fib_bad_broken.mp3,Esa está rota. ¡Prueba otra!,ESA ESTÁ ROTA. ¡PRUEBA OTRA!
+fib_bad_clump,voice/es/fib_bad_clump.mp3,Hay demasiadas células aplastadas juntas. ¡Prueba otra!,HAY DEMASIADAS CÉLULAS APLASTADAS JUNTAS. ¡PRUEBA OTRA!
+fib_bad_none,voice/es/fib_bad_none.mp3,Ahí no hay nada. ¡Busca un bultito!,AHÍ NO HAY NADA. ¡BUSCA UN BULTITO!
+fib_good,voice/es/fib_good.mp3,¡Qué célula tan bonita!,¡QUÉ CÉLULA TAN BONITA!
+fib_good_worm,voice/es/fib_good_worm.mp3,¡Qué gusano tan bonito!,¡QUÉ GUSANO TAN BONITO!
+fib_coat,voice/es/fib_coat.mp3,"Primero, una capa de metal brillante para proteger la parte de arriba. ¡Mantén A para rociar!","PRIMERO, UNA CAPA DE METAL BRILLANTE PARA PROTEGER LA PARTE DE ARRIBA. ¡MANTÉN A PARA ROCIAR!"
+fib_coat_done,voice/es/fib_coat_done.mp3,¡Brillante! Como una armadura.,¡BRILLANTE! COMO UNA ARMADURA.
+fib_mill,voice/es/fib_mill.mp3,¡Ahora el haz de iones! Mantén A y excava las partes naranjas.,¡AHORA EL HAZ DE IONES! MANTÉN A Y EXCAVA LAS PARTES NARANJAS.
+fib_keep,voice/es/fib_keep.mp3,¡Deja la rebanada dorada en el medio!,¡DEJA LA REBANADA DORADA EN EL MEDIO!
+fib_careful,voice/es/fib_careful.mp3,¡Cuidado! ¡No excaves la rebanada dorada!,¡CUIDADO! ¡NO EXCAVES LA REBANADA DORADA!
+fib_polish,voice/es/fib_polish.mp3,¡Excelente! Ahora pule para que quede aún más fina.,¡EXCELENTE! AHORA PULE PARA QUE QUEDE AÚN MÁS FINA.
+fib_done,voice/es/fib_done.mp3,¡Hicimos una lamela! Eso quiere decir una rebanada súper fina.,¡HICIMOS UNA LAMELA! ESO QUIERE DECIR UNA REBANADA SÚPER FINA.
+fib_fact,voice/es/fib_fact.mp3,¡Es cientos de veces más fina que un pelo!,¡ES CIENTOS DE VECES MÁS FINA QUE UN PELO!
+fib_next,voice/es/fib_next.mp3,"Ahora, al microscopio gigante: ¡el Crios!","AHORA, AL MICROSCOPIO GIGANTE: ¡EL KRIOS!"
+kr_1,voice/es/kr_1.mp3,Este es el Titán Crios G 4. ¡Es enorme!,ESTE ES EL TITAN KRIOS G4. ¡ES ENORME!
+kr_2,voice/es/kr_2.mp3,Dispara electrones chiquitos a través de nuestra rebanada para tomar fotos.,DISPARA ELECTRONES CHIQUITOS A TRAVÉS DE NUESTRA REBANADA PARA TOMAR FOTOS.
+kr_3,voice/es/kr_3.mp3,"¡Adentro no hay nada de aire, y se mantiene súper frío!","¡ADENTRO NO HAY NADA DE AIRE, Y SE MANTIENE SÚPER FRÍO!"
+kr_load,voice/es/kr_load.mp3,¡Presiona A para meter nuestra rejilla en el cargador robot!,¡PRESIONA A PARA METER NUESTRA REJILLA EN EL CARGADOR ROBOT!
+kr_find,voice/es/kr_find.mp3,¿Dónde está nuestra rebanada? ¡Busca la lamela que brilla y presiona A!,¿DÓNDE ESTÁ NUESTRA REBANADA? ¡BUSCA LA LAMELA QUE BRILLA Y PRESIONA A!
+kr_found,voice/es/kr_found.mp3,¡Ahí está! ¡Acerquémonos!,¡AHÍ ESTÁ! ¡ACERQUÉMONOS!
+kr_notit,voice/es/kr_notit.mp3,Esa no es. ¡Busca la rebanada que brilla!,ESA NO ES. ¡BUSCA LA REBANADA QUE BRILLA!
+kr_tilt1,voice/es/kr_tilt1.mp3,Ahora giramos la rebanada y tomamos fotos desde muchos lados.,AHORA GIRAMOS LA REBANADA Y TOMAMOS FOTOS DESDE MUCHOS LADOS.
+kr_tilt2,voice/es/kr_tilt2.mp3,¡Como caminar alrededor de una estatua para verla toda!,¡COMO CAMINAR ALREDEDOR DE UNA ESTATUA PARA VERLA TODA!
+kr_tilt3,voice/es/kr_tilt3.mp3,Mueve el círculo dorado sobre la parte que brilla. ¡Presiona A para la foto!,MUEVE EL CÍRCULO DORADO SOBRE LA PARTE QUE BRILLA. ¡PRESIONA A PARA LA FOTO!
+kr_miss,voice/es/kr_miss.mp3,"¡Uy! Primero centra, luego toma la foto.","¡UY! PRIMERO CENTRA, LUEGO TOMA LA FOTO."
+kr_gentle,voice/es/kr_gentle.mp3,Los electrones son fuertes. Las fotos rápidas cuidan la célula.,LOS ELECTRONES SON FUERTES. LAS FOTOS RÁPIDAS CUIDAN LA CÉLULA.
+kr_done,voice/es/kr_done.mp3,¡Tomamos 13 fotos! Los científicos lo llaman serie de inclinación.,¡TOMAMOS 13 FOTOS! LOS CIENTÍFICOS LO LLAMAN SERIE DE INCLINACIÓN.
+kr_next,voice/es/kr_next.mp3,¡Armemos la foto en tres D en la computadora!,¡ARMEMOS LA FOTO EN 3D EN LA COMPUTADORA!
+tm_1,voice/es/tm_1.mp3,La computadora junta todas las fotos...,LA COMPUTADORA JUNTA TODAS LAS FOTOS...
+tm_2,voice/es/tm_2.mp3,¡Tarán! ¡Un tomograma en tres D!,¡TARÁN! ¡UN TOMOGRAMA EN 3D!
+tm_3,voice/es/tm_3.mp3,"Ahora podemos bucear por la célula, rebanada por rebanada.","AHORA PODEMOS BUCEAR POR LA CÉLULA, REBANADA POR REBANADA."
+tm_4,voice/es/tm_4.mp3,Mueve arriba y abajo para bucear. ¡Presiona A cuando algo brille!,MUEVE ARRIBA Y ABAJO PARA BUCEAR. ¡PRESIONA A CUANDO ALGO BRILLE!
+tm_membrane,voice/es/tm_membrane.mp3,¡La membrana! Es la piel de la célula.,¡LA MEMBRANA! ES LA PIEL DE LA CÉLULA.
+tm_membrane_bac,voice/es/tm_membrane_bac.mp3,"¡Membranas! ¡Esta bacteria tiene dos pieles, una dentro de la otra!","¡MEMBRANAS! ¡ESTA BACTERIA TIENE DOS PIELES, UNA DENTRO DE LA OTRA!"
+tm_ribosome,voice/es/tm_ribosome.mp3,¡Ribosomas! Fábricas chiquitas que hacen proteínas.,¡RIBOSOMAS! FÁBRICAS CHIQUITAS QUE HACEN PROTEÍNAS.
+tm_mito,voice/es/tm_mito.mp3,¡Una mitocondria! La planta de energía de la célula.,¡UNA MITOCONDRIA! LA PLANTA DE ENERGÍA DE LA CÉLULA.
+tm_nucleus,voice/es/tm_nucleus.mp3,¡El núcleo! Guarda el A D N de la célula.,¡EL NÚCLEO! GUARDA EL ADN DE LA CÉLULA.
+tm_dna,voice/es/tm_dna.mp3,¡El A D N! Es el libro de instrucciones de la célula. Las bacterias no tienen núcleo.,¡EL ADN! ES EL LIBRO DE INSTRUCCIONES DE LA CÉLULA. LAS BACTERIAS NO TIENEN NÚCLEO.
+tm_flagellum,voice/es/tm_flagellum.mp3,¡Un flagelo! ¡Una colita que gira como una hélice!,¡UN FLAGELO! ¡UNA COLITA QUE GIRA COMO UNA HÉLICE!
+tm_muscle,voice/es/tm_muscle.mp3,¡Fibras musculares! ¡Jalan para que el gusano se pueda menear!,¡FIBRAS MUSCULARES! ¡JALAN PARA QUE EL GUSANO SE PUEDA MENEAR!
+tm_all,voice/es/tm_all.mp3,¡Los encontraste todos!,¡LOS ENCONTRASTE TODOS!
+tm_real,voice/es/tm_real.mp3,¡Y este es un tomograma de verdad de nuestro laboratorio!,¡Y ESTE ES UN TOMOGRAMA DE VERDAD DE NUESTRO LABORATORIO!
+real_1,voice/es/real_1.mp3,¡Mira! ¡Esta es una foto de verdad de nuestro laboratorio!,¡MIRA! ¡ESTA ES UNA FOTO DE VERDAD DE NUESTRO LABORATORIO!
+stars_3,voice/es/stars_3.mp3,¡Increíble! ¡Tres estrellas!,¡INCREÍBLE! ¡TRES ESTRELLAS!
+stars_2,voice/es/stars_2.mp3,¡Muy bien! ¡Dos estrellas!,¡MUY BIEN! ¡DOS ESTRELLAS!
+stars_1,voice/es/stars_1.mp3,¡Bien hecho! ¡Ganaste una estrella!,¡BIEN HECHO! ¡GANASTE UNA ESTRELLA!
+cert_1,voice/es/cert_1.mp3,¡Lo lograste! ¡Ya eres parte del equipo de crio E T!,¡LO LOGRASTE! ¡YA ERES PARTE DEL EQUIPO DE CRIO-ET!
+cert_2,voice/es/cert_2.mp3,Gracias por jugar. ¡Vuelve pronto!,GRACIAS POR JUGAR. ¡VUELVE PRONTO!

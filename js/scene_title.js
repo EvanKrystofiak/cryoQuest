@@ -10,10 +10,10 @@
   let attract = false, attractT = 0;
 
   const SLIDES = [
-    { n: '1', title: 'FREEZE IT!', text: 'SUPER FAST, INTO GLASS ICE', art: 'freeze' },
-    { n: '2', title: 'SLICE IT!', text: 'A BEAM CUTS A THIN SLICE', art: 'fib' },
-    { n: '3', title: 'SNAP IT!', text: 'PICTURES FROM MANY SIDES', art: 'krios' },
-    { n: '4', title: 'SEE IT IN 3D!', text: 'DIVE INSIDE A REAL CELL', art: 'tomo' },
+    { n: '1', title: 'FREEZE IT!', text: 'SUPER FAST, INTO GLASS ICE', art: 'freeze', artX: 210 },
+    { n: '2', title: 'SLICE IT!', text: 'A BEAM CUTS A THIN SLICE', art: 'fib', artX: 222 },
+    { n: '3', title: 'SNAP IT!', text: 'PICTURES FROM MANY SIDES', art: 'krios', artX: 260 },
+    { n: '4', title: 'SEE IT IN 3D!', text: 'DIVE INSIDE A REAL CELL', art: 'tomo', artX: 216 },
   ];
 
   function titleText(c, str, cx, y, scale) {
@@ -63,6 +63,63 @@
   }
   let pipDir = 1;
 
+  // ---------- language toggle (bottom left) ----------
+  const LANG_Y = 199, LANG_H = 14, LANG_TY = 5; // text sits low enough to leave room for the tilde in ESPAÑOL
+  function langButtons() {
+    const G = g();
+    let x = 14;
+    return CQ.i18n.langs.map((l) => {
+      const label = CQ.i18n.names[l];
+      const w = G.measure(label, 1, true) + 8;
+      const b = { lang: l, label, x, y: LANG_Y, w, h: LANG_H };
+      x += w + 3;
+      return b;
+    });
+  }
+  function setLang(l) {
+    if (l === CQ.i18n.lang) return;
+    CQ.i18n.set(l);
+    CQ.audio.sfx('move');
+    CQ.voice.say('attract_1'); // so kids who can't read yet hear the switch
+  }
+  function drawLangToggle(c) {
+    const G = g();
+    const btns = langButtons();
+    for (const b of btns) {
+      const on = b.lang === CQ.i18n.lang;
+      G.rect(c, b.x, b.y, b.w, b.h, on ? 'goldDD' : 'g5');
+      G.rect(c, b.x + 1, b.y + 1, b.w - 2, b.h - 2, on ? 'gold' : '#151520');
+      G.text(c, b.label, b.x + 4, b.y + LANG_TY, { color: on ? 'ink' : 'g3', raw: true });
+    }
+    // left/right arrows for controller and keyboard players
+    if (CQ.input.lastDevice !== 'mouse') {
+      const last = btns[btns.length - 1];
+      const blink = Math.floor(CQ.time * 2) % 2 === 0;
+      G.text(c, '<', btns[0].x - 7, LANG_Y + LANG_TY, { color: blink ? 'goldL' : 'gold', raw: true });
+      G.text(c, '>', last.x + last.w + 3, LANG_Y + LANG_TY, { color: blink ? 'goldL' : 'gold', raw: true });
+    }
+  }
+  // returns true when the toggle used this frame's input
+  function updateLangToggle() {
+    const I = CQ.input;
+    if (I.pressed('left') || I.pressed('right')) {
+      const L = CQ.i18n.langs, d = I.pressed('left') ? -1 : 1;
+      setLang(L[(L.indexOf(CQ.i18n.lang) + d + L.length) % L.length]);
+      return true;
+    }
+    const P = I.pointer;
+    if (P.pressed) {
+      for (const b of langButtons()) {
+        if (P.x >= b.x - 2 && P.x < b.x + b.w + 2 && P.y >= b.y - 3 && P.y < b.y + b.h + 3) {
+          CQ.audio.unlock();
+          setLang(b.lang);
+          return true;
+        }
+      }
+    }
+    return false;
+  }
+
   function drawSlide(c) {
     const G = g();
     const i = Math.floor(attractT / 4) % SLIDES.length;
@@ -74,7 +131,8 @@
     G.circle(c, 82, 92, 16, 'goldDD'); G.circle(c, 82, 91, 15, 'gold');
     G.text(c, s.n, 82, 82, { color: 'ink', scale: 3, align: 'center' });
     G.text(c, s.title, 110, 70, { color: 'gold', scale: 2 });
-    G.text(c, s.text, 110, 92, { color: 'white' });
+    // wrap the line so it stays left of the picture (Spanish is longer)
+    G.wrap(CQ.i18n.ui(s.text), s.artX - 116, 1).forEach((ln, k) => G.text(c, ln, 110, 92 + k * 10, { color: 'white', raw: true }));
     // little art
     const S = CQ.sprites;
     const bob = Math.round(Math.sin(lt * 4) * 2);
@@ -84,12 +142,19 @@
     } else if (s.art === 'fib') {
       c.drawImage(S.crossbeam, 222, 86 + bob);
     } else if (s.art === 'krios') {
-      c.drawImage(S.krios, 236, 68 + bob);
+      c.drawImage(S.krios, 260, 68 + bob);
     } else {
       c.drawImage(S.computer, 216, 112 + bob);
     }
     // page dots
     for (let k = 0; k < SLIDES.length; k++) G.rect(c, 172 + k * 10, 156, 6, 3, k === i ? 'gold' : 'g4');
+  }
+
+  // copyright notice (bottom right); the text can be changed in assets/config.js
+  function drawCopyright(c) {
+    const cfg = window.CQ_CONFIG || {};
+    const t = cfg.copyright !== undefined ? cfg.copyright : '© 2026 EVAN KRYSTOFIAK';
+    if (t) g().text(c, t, CQ.W - 6, LANG_Y + LANG_TY, { color: 'g3', align: 'right', raw: true });
   }
 
   CQ.scenes.title = {
@@ -125,6 +190,7 @@
       }
       if (CQ.sceneTime - lastSay > 120 && quiet > 30) { lastSay = CQ.sceneTime; CQ.voice.say('attract_1'); }
 
+      if (CQ.sceneTime > 0.3 && updateLangToggle()) { attract = false; CQ.input.flush(); return; }
       if (CQ.input.anyPressed() && CQ.sceneTime > 0.6) {
         if (attract) { attract = false; CQ.input.flush(); return; }
         CQ.audio.unlock();
@@ -136,6 +202,8 @@
       const G = g();
       drawBackground(c);
       drawFloor(c);
+      drawLangToggle(c);
+      drawCopyright(c);
       if (attract) { drawSlide(c); return; }
       // logo + title
       const bob = Math.round(Math.sin(CQ.time * 1.6) * 2);
@@ -144,9 +212,10 @@
       G.text(c, 'A FROZEN ADVENTURE INTO THE CELL', CQ.W / 2, 111, { color: 'iceL', align: 'center', shadow: '#000' });
       if (Math.floor(CQ.time * 1.8) % 2 === 0 || CQ.sceneTime < 0.5) G.pressLine(c, 'TO PLAY!', CQ.W / 2 + 20, 132, 'white');
       const ex = CQ.explorers.today();
-      G.text(c, 'EXPLORERS TODAY: ' + ex.count, CQ.W - 6, 204, { color: 'gold', align: 'right' });
+      G.text(c, 'EXPLORERS TODAY: ' + ex.count, CQ.W - 6, 6, { color: 'gold', align: 'right', shadow: '#000' });
       if (CQ.audio.blocked() && CQ.input.padConnected === false && CQ.sceneTime > 2) {
-        G.text(c, 'CLICK OR PRESS ANY KEY FOR SOUND', 6, 204, { color: 'g3' });
+        // two short lines so it stays left of the logo
+        G.wrap(CQ.i18n.ui('CLICK OR PRESS ANY KEY FOR SOUND'), 140, 1).forEach((ln, k) => G.text(c, ln, 6, 6 + k * 10, { color: 'g3', raw: true }));
       }
     },
   };
