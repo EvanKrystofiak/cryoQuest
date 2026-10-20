@@ -150,11 +150,26 @@
     for (let k = 0; k < SLIDES.length; k++) G.rect(c, 172 + k * 10, 156, 6, 3, k === i ? 'gold' : 'g4');
   }
 
-  // copyright notice (bottom right); the text can be changed in assets/config.js
+  // copyright notice (bottom right). In English, while the recorded narration is in use, it fades back
+  // and forth with the narrator credit. Both texts can be changed in assets/config.js.
+  const CREDIT_SECS = 5, CREDIT_FADE = 0.6;
   function drawCopyright(c) {
     const cfg = window.CQ_CONFIG || {};
-    const t = cfg.copyright !== undefined ? cfg.copyright : '© 2026 EVAN KRYSTOFIAK';
-    if (t) g().text(c, t, CQ.W - 6, LANG_Y + LANG_TY, { color: 'g3', align: 'right', raw: true });
+    const copy = cfg.copyright !== undefined ? cfg.copyright : '© 2026 EVAN KRYSTOFIAK';
+    const narr = cfg.narrationCredit !== undefined ? cfg.narrationCredit : 'NARRATION BY REBECCA SHREM';
+    const list = [copy];
+    if (CQ.i18n.lang === 'en' && CQ.settings.voice && CQ.settings.recordedVoice && CQ.voice.hasRecordings()) list.push(narr);
+    const shown = list.filter(Boolean);
+    if (!shown.length) return;
+    let t = shown[0], alpha = 1;
+    if (shown.length > 1) {
+      const k = CQ.time / CREDIT_SECS, p = (k % 1) * CREDIT_SECS;
+      t = shown[Math.floor(k) % shown.length];
+      alpha = Math.max(0, Math.min(1, p / CREDIT_FADE, (CREDIT_SECS - p) / CREDIT_FADE));
+    }
+    c.globalAlpha = alpha;
+    g().text(c, t, CQ.W - 6, LANG_Y + LANG_TY, { color: 'g3', align: 'right', raw: true });
+    c.globalAlpha = 1;
   }
 
   CQ.scenes.title = {

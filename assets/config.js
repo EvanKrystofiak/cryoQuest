@@ -15,6 +15,9 @@ window.CQ_CONFIG = {
 
   // Shown in the bottom right corner of the title screen ('' to hide)
   copyright: '© 2026 EVAN KRYSTOFIAK',
+  // Takes turns with the copyright line (fading in and out) when English is selected and the
+  // recorded voice files are being used ('' to hide)
+  narrationCredit: 'NARRATION BY REBECCA SHREM',
 
   // Pip's voice. true = talk, false = silent (text only)
   voice: true,

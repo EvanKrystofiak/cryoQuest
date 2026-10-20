@@ -68,6 +68,8 @@ browser notices it.
   `caption: 'A REAL LAMELLA!', caption_es: '¡UNA LAMELA DE VERDAD!'`. The built-in captions are translated
   automatically. `labNameSpanish` sets the lab name on the Spanish certificate.
 * The copyright line in the bottom right corner of the title screen comes from `copyright` in `assets\config.js`.
+  In English, while the recorded voice files are in use, it fades back and forth with the narrator credit
+  (`narrationCredit`, "NARRATION BY REBECCA SHREM").
 
 ## Kiosk tips
 
@@ -121,6 +123,10 @@ To use **real recorded voice-over**:
 2. Record each line and save it as an MP3 in the `voice\` folder, named exactly like the `line_id`
    (for example `voice\intro_1.mp3`).
 3. Restart the game. Recorded lines are used automatically, and the computer voice fills in any line that has no recording.
+
+The English recordings in `voice\` are trimmed to about 0.1 s of silence before the voice and 0.25 s after,
+and leveled so speech sits around −18 dB with peaks below −1.5 dB (mono MP3). If you re-record a line, aim
+for the same so it matches the others: start recording a moment before speaking, and normalize the volume.
 
 **Spanish recordings** work the same way: `VOICE_SCRIPT_ES.csv` lists every Spanish line; save them in
 `voice\es\` (for example `voice\es\intro_1.mp3`).
